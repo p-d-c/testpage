@@ -60,9 +60,15 @@ for (var i = 0; i < 25; i++) {
   grid_item.style.alignItems = "center";
   grid_item.style.cursor = "pointer";
   grid_item.style.transition = "roate 0.1s";
-  grid_item.addEventListener("click", function() {
-  	alert("hello");
-    window.location.href = "https://www.baskinrobbins.com/en";
+  grid_item.addEventListener("mouseenter", function() {
+  	//alert("hello");
+    grid_item.style.rotate = "15deg";
+    //window.location.href = "https://www.baskinrobbins.com/en";
+  })
+  grid_item.addEventListener("mouseleave", function() {
+  	//alert("hello");
+    grid_item.style.rotate = "0deg";
+    //window.location.href = "https://www.baskinrobbins.com/en";
   })
   grid.appendChild(grid_item);
   
